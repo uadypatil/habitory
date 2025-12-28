@@ -74,7 +74,7 @@ export default function UserSidebar({ isOpen, setIsOpen }) {
                         </Link>
                         <a
                             href="/"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition text-sm"
                         >
