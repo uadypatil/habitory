@@ -21,6 +21,11 @@ import AddNewTaskPage from "./pages/user/AddNewTaskPage";
 import HelpPortal from "./pages/HelpPortal";
 import PersonalInfo from "./pages/user/PersonalInfo";
 import License from "./pages/LIcense";
+import UserTaskList from "./pages/user/UserTaskList";
+import UserSettings from "./pages/user/UserSettings";
+import UserPrivacyPolicy from "./pages/user/UserPrivacyPolicy";
+import UserHelpAndSupport from "./pages/user/UserHelpAndSupport";
+import UserContactUs from "./pages/user/UserContactUs";
 
 function App() {
   return (
@@ -41,7 +46,12 @@ function App() {
         <Route element={<UserDashboardLayout />}>
           <Route path="/dashboard" element={<UserDashboard />} />
           <Route path="/task/new" element={<AddNewTaskPage />} />
-          <Route path="/personals" element={<PersonalInfo />} />          
+          <Route path="/task/List" element={<UserTaskList />} />
+          <Route path="/personals" element={<PersonalInfo />} />
+          <Route path="/settings" element={<UserSettings />} />
+          <Route path="/privacy-policy" element={<UserPrivacyPolicy />} />
+          <Route path="/help-support" element={<UserHelpAndSupport />} />
+          <Route path="/contact-us" element={<UserContactUs />} />
         </Route>
         <Route path="/add-habit" element={<AddHabit />} />
 

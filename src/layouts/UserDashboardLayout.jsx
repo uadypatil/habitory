@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import UserSidebar from "../components/UserSidebar";
 import UserNavbar from "../components/UserNavbar";
 import { Outlet } from "react-router-dom";
+import { defaultThemeLoader } from "../utils/themeManager";
 
 export default function UserDashboardLayout() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -11,6 +12,9 @@ export default function UserDashboardLayout() {
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
+
+        // loads the theme
+        defaultThemeLoader();
     }, []);
 
     return (

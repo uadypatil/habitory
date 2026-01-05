@@ -10,6 +10,9 @@ export default function UserDashboard() {
         { name: "Track Daily Habits", completed: false },
         { name: "Update Monthly Goal", completed: false },
         { name: "Evening Meditation", completed: false },
+        { name: "Track Daily Habits", completed: false },
+        { name: "Update Monthly Goal", completed: false },
+        { name: "Evening Meditation", completed: false },
     ];
 
     // null = cheat day

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiHome, FiCheckCircle, FiTrendingUp, FiTarget, FiBook, FiExternalLink } from "react-icons/fi";
 import { BsFilePerson, BsPerson } from "react-icons/bs";
+import { GiGearHammer } from "react-icons/gi";
 
 export default function UserSidebar({ isOpen, setIsOpen }) {
     return (
@@ -34,7 +35,7 @@ export default function UserSidebar({ isOpen, setIsOpen }) {
                             <FiCheckCircle /> Add Task
                         </Link>
                         <Link
-                            to="/tasks"
+                            to="/task/list"
                             className="flex items-center gap-3 px-6 py-3 text-gray-700 hover:bg-blue-50 transition"
                             onClick={() => setIsOpen(false)}
                         >
@@ -47,19 +48,26 @@ export default function UserSidebar({ isOpen, setIsOpen }) {
                         >
                             <FiTrendingUp /> Streaks
                         </Link>
-                        <Link
+                        {/* <Link
                             to="/goals"
                             className="flex items-center gap-3 px-6 py-3 text-gray-700 hover:bg-blue-50 transition"
                             onClick={() => setIsOpen(false)}
                         >
                             <FiTarget /> Goals
-                        </Link>
+                        </Link> */}
                         <Link
                             to="/personals"
                             className="flex items-center gap-3 px-6 py-3 text-gray-700 hover:bg-blue-50 transition"
                             onClick={() => setIsOpen(false)}
                         >
                             <BsPerson /> Personals
+                        </Link>
+                        <Link
+                            to="/settings"
+                            className="flex items-center gap-3 px-6 py-3 text-gray-700 hover:bg-blue-50 transition"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <GiGearHammer /> Settings
                         </Link>
                     </nav>
                     
